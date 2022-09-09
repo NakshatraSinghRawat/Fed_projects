@@ -1,0 +1,123 @@
+body{
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5rem;
+}
+.boxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardBox{
+    float: left;
+    font-size: 1.2rem;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+}
+.cardBox:hover .card{
+    transform: rotateY(180deg);
+}
+.card{
+    background: rgb(143, 9, 143);
+    border: 2px solid black;
+    cursor: default;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+}
+.card p{
+    margin-bottom: 1.8rem;
+}
+ .card .back{
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    height: 100%;
+    padding: 0.8rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.card .front{
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    height: 100%;
+    padding: 0.8rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+}
+.card .back{
+    transform: rotateY(180deg);
+    border-radius: 20px;
+}
+.card .back a{
+    padding: 0.5rem 0.5rem;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    transition: all 0.2s ease 0s;
+}
+.card .back a:hover{
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+.cardBox:nth-child(1) .card .back{
+    background-color: orangered;
+}
+.cardBox:nth-child(2) .card .back{
+    background-color: red;
+}
+.cardBox:nth-child(3) .card .back{
+    background-color: lime;
+}
+.cardBox:nth-child(2) .card{
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+.cardBox:nth-child(3) .card{
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+
+@-webkit-keyframes giro{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes giro{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
