@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #41436A;
+    color: white;
+    font-family: 'Rubik Dirt', cursive;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.logo span{
+    padding: 7px 9px;
+    font-size: 45px;
+}
+.logo h3{
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar li{
+    padding: 10px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar li:hover{
+    text-decoration: underline;
+}
+
+/* SECTION 1 STYLING  */
+.section1{
+    height: 80vh;
+    background-color: #41436A;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.musicimg{
+    padding-top: 20px;
+}
+.intro-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+}
+.intro-title h2{
+    font-family: 'DynaPuff', cursive;
+}
+.intro-title span{
+    font-size: 50px;
+}
+.intro-title p{
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    font-family: 'DynaPuff', cursive;
+}
+h2{
+    font-size: 25px;
+    color: white;
+    padding: 20px 0;
+}
+.createacntbtn{
+    background-color: #F54768;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 7px;
+    width: 20vw;
+    font-family: 'Rubik Dirt', cursive;
+    cursor: pointer;
+}
+.createacntbtn:hover{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+/* CARDS SECTION STARTS HERE  */
+.section2{
+    height: 60vh;
+}
+.section2 h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 10px;
+
+}
+.card{
+    height: 40vh;
+    width: 20vw;
+}
+.card h3{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 7px;
+    text-decoration: underline;
+}
+.card p{
+    color: grey;
+    font-size: 20px;
+    padding-top: 9px;
+}
+footer{
+    height: 10vh;
+    background-color: black;
+    color: white;
+}
+footer h3{
+    font-size: 20px;
+    text-align: center;
+    padding:18px 0;
+}
+
+
+/* RESPONSIVENESS STARTS HERE  */
+@media screen and (max-width: 440px){
+    .header{
+        height: 10vh;
+    }
+    .logo span{
+        padding: 18px 0;
+        font-size: 24px;
+    }
+    .logo h3{
+        font-size: 13px;
+        padding: 20px 9px;
+    }
+    .navbar li{
+        padding: 10px 9px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .intro-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-title h2{
+        font-family: 'DynaPuff', cursive;
+        font-size: 15px;
+        word-spacing: 7px;
+        height: 20vh;
+        width: 50vw;
+    }
+    .intro-title span{
+        font-size: 50px;
+    }
+    .intro-title p{
+        height: 15vh;
+        width: 50vw;
+        padding: 15px 0;
+        color: white;
+        font-size: 18px;
+        font-family: 'DynaPuff', cursive;
+        margin-top: 10px;
+        word-spacing: 7px;
+    }
+    .musicimg{
+        display: none;
+    }
+    .createacntbtn{
+        background-color: #F54768;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 7px;
+        margin-top: 7px;
+        width: 50vw;
+        font-family: 'Rubik Dirt', cursive;
+        cursor: pointer;
+    }
+    .createacntbtn:hover{
+        text-decoration: underline;
+    }
+    .section2{
+        height: 100%;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .card{
+        height: 35vh;
+        width: 55%;
+        margin: 9px 0;
+    }
+    .card h3{
+        font-size: 15px;
+        text-align: center;
+        padding-top: 7px;
+        text-decoration: underline;
+    }
+    .card p{
+        color: grey;
+        font-size: 20px;
+        padding: 9px 10px;
+    }
+}
